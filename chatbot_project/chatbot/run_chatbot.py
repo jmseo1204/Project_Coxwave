@@ -103,7 +103,7 @@ def chatbot():
       message = generate_question(message, history)
 
     #답변에 활용할 문맥 검색
-    context = find_context(message,3)
+    context = find_context(message,3,0.4)
 
     #GPT에게 질문 및 문맥 제공
     messages.append({"role": "user", "content": f"Question: {message} {context}"})
