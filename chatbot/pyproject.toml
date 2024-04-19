@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "chatbot"
+version = "0.1.0"
+description = ""
+authors = ["Lee Eunhui <yieunhui8321@snu.ac.kr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+transformers = "^4.40.0"
+openai = "^1.23.1"
+torch = "^2.2.2"
+tensorflow = "^2.16.1"
+chromadb = "^0.4.24"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.21.0"
+black = {version = "^23.1.0", allow-prereleases = true}
+ipykernel = "^6.21.1"
+pytest = "7.2.0"
+ruff = "^0.0.257"
+pytest-asyncio = "^0.21.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
