@@ -1,6 +1,6 @@
 [2024-SPRING] GrowthHackers Project WITH COWWAVE
 
-1) RAG chatbot toy-example development
+1) basic RAG chatbot development
 - NAVER smart store QnA dataset
 - langchain map-reduce data aggregation
 
